@@ -1,5 +1,10 @@
-import React from 'react';
+import React from 'react'
+import Button from '../../components/Button/';
 
-const Home = (props) => <div>This is the home page</div>
+const Home = (props) => (
+  <div className="home">
+    <Button>Dylan Fernandes</Button>
+  </div>
+)
 
-export default Home;
+export default Home

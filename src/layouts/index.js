@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import '../config/main.scss'
+import './../assets/images/home__background-img.jpg'
 
 const Layout = ({ children, data }) => (
   <div>

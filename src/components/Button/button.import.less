@@ -1,0 +1,29 @@
+.button {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: @bold-weight;
+  font-size: @paragraph-size;
+  font-family: @paragraph-family;
+  border-radius: 8px;
+  padding: 12px 30px;
+  &.button-light {
+    border: 2px solid @black;
+    color: @black;
+    background-color: @white;
+    &:hover {
+      transition: all 0.4s;
+      background-color: @black;
+      color: @white;
+    }
+  }
+  &.button-dark {
+    border: 2px solid @white;
+    color: @white;
+    background-color: transparent;
+    &:hover {
+      transition: all 0.4s;
+      background-color: @white;
+      color: @black;
+    }
+  }
+}

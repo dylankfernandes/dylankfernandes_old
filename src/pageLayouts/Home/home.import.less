@@ -1,9 +1,38 @@
 .home {
-  width: 100%;
-  height: 100%;
   .home__landing {
+    height: 100vh;
     width: 100%;
-    height: 100%;
-    background-image: url("../assets/images/home__background-img.jpg");
+    background-image: url("../../assets/images/home__background.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    * {
+      position: relative;
+    }
+  }
+  .home__content {
+    text-align: center;
+    width: 600px;
+    color: @white;
+    .home__title {
+      font-family: @open-sans;
+      font-weight: @bold-weight;
+      font-size: @text-xxlg;
+    }
+    .home__tagline {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: @text-md;
+      font-family: @karla;
+    }
+    Button {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
   }
 }

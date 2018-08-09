@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import './../assets/images/home__background-img.jpg'
+import '../config/main.less';
 
 const Layout = ({ children, data }) => (
   <div>

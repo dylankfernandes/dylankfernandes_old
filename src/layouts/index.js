@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import '../config/main.less';
+import Navbar from '../components/Navbar';
 
 const Layout = ({ children, data }) => (
   <div>
@@ -14,6 +15,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <div>
+      <Navbar />
       {children()}
     </div>
   </div>

@@ -17,28 +17,28 @@ class Navbar extends Component {
     let openClasses = this.state.open ? 'on' : ''
     let resizeClasses = this.state.open ? 'active' : ''
     return (
-      <div className="nav">
-        <nav>
-          <span id="brand">
+      <div>
+        <nav className="nav">
+          <span className="nav__brand">
             <a href="index.html">Dylan Fernandes</a>
           </span>
 
-          <ul id="menu">
+          <ul className="nav__menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">FAQ</a></li>
           </ul>
 
-          <div id="toggle" className={openClasses} onClick={() => this.toggle()}>
-            <div className="span" id="one"></div>
-            <div className="span" id="two"></div>
-            <div className="span" id="three"></div>
+          <div className={`nav__toggle ${openClasses}`} onClick={() => this.toggle()}>
+            <div className="span one"></div>
+            <div className="span two"></div>
+            <div className="span three"></div>
           </div>
         </nav>
 
-        <div id="resize" className={resizeClasses}>
-          <ul id="menu">
+        <div className={`nav__resize ${resizeClasses}`}>
+          <ul className="nav__menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>

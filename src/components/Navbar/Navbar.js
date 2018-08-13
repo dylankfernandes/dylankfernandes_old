@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'gatsby-link'
 
 class Navbar extends Component {
   state = {
@@ -20,14 +21,14 @@ class Navbar extends Component {
       <div>
         <nav className="nav">
           <span className="nav__brand">
-            <a href="index.html">Dylan Fernandes</a>
+            <Link to="/" className="nav__link">Dylan Fernandes</Link>
           </span>
 
           <ul className="nav__menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><Link to="/" className="nav__link">Home</Link></li>
+            <li><Link to="/" className="nav__link">About</Link></li>
+            <li><Link to="/" className="nav__link">Contact</Link></li>
+            <li><Link to="/" className="nav__link">FAQ</Link></li>
           </ul>
 
           <div className={`nav__toggle ${openClasses}`} onClick={() => this.toggle()}>
@@ -39,10 +40,10 @@ class Navbar extends Component {
 
         <div className={`nav__resize ${resizeClasses}`}>
           <ul className="nav__menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><Link to="/" className="nav__link">Home</Link></li>
+            <li><Link to="/" className="nav__link">About</Link></li>
+            <li><Link to="/" className="nav__link">Contact</Link></li>
+            <li><Link to="/" className="nav__link">FAQ</Link></li>
           </ul>
         </div>
       </div>

@@ -9,7 +9,7 @@
     margin-left: 50px;
     font-weight: bold;
     text-decoration: none;
-    a {
+    .nav__link {
       color: @white;
       transition: all 0.3s ease-out;
       font-family: @montserrat;
@@ -28,7 +28,7 @@
       line-height: 70px;
       position: relative;
       transition: all 0.3s ease-out;
-      a {
+      .nav__link {
         color: @white;
         font-family: @montserrat;
         font-weight: 200;
@@ -78,10 +78,10 @@
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease-out;
-  display: table;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   .nav__menu {
-    height: 90px;
-    display: table-cell;
     vertical-align: center;
     li {
       display: block;
@@ -92,10 +92,7 @@
       font-weight: bold;
       cursor: pointer;
       transition: all 0.3s ease-out;
-      &:nth-child(1) {
-        margin-top: 100px;
-      }
-      a {
+      .nav__link {
         color: @white;
       }
     }
@@ -115,7 +112,7 @@
   .nav .nav__brand {
     display: none;
   }
-  .nav__menu a {
+  .nav__menu .nav__link {
     font-family: @montserrat;
     font-weight: 200;
     font-size: 20px;

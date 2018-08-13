@@ -1,0 +1,24 @@
+.button {
+  font-family: @karla;
+  font-size: @text-sm;
+  text-transform: uppercase;
+  width: 240px;
+  height: 50px;
+  border-radius: 80px;
+  line-height: 35px;
+  text-align: center;
+  &.button-light {
+    background-color: transparent;
+    color: @white;
+    text-decoration: none;
+    border: 2px solid @white;
+    transition: all @animation-timing;
+    &:hover {
+      color: @black;
+      background-color: @white;
+    }
+  }
+  &.button-dark {
+    &:hover {}
+  }
+}

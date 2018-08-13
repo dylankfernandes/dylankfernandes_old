@@ -1,0 +1,133 @@
+.nav {
+  width: 100%;
+  background: @pitch-black;
+  height: 70px;
+  z-index: 1;
+  .nav__brand {
+    font-size: 30px;
+    line-height: 70px;
+    margin-left: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    a {
+      color: @white;
+      transition: all 0.3s ease-out;
+      font-family: @montserrat;
+      font-weight: 300;
+      text-decoration: none;
+    }
+  }
+  .nav__menu {
+    position: relative;
+    float: right;
+    li {
+      display: inline-block;
+      padding: 0px 30px;
+      margin-right: 20px;
+      cursor: pointer;
+      line-height: 70px;
+      position: relative;
+      transition: all 0.3s ease-out;
+      a {
+        color: @white;
+        font-family: @montserrat;
+        font-weight: 200;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  float: right;
+  transition: all 0.3s ease-out;
+  visibility: hidden;
+  opacity: 0;
+  .span {
+    height: 3px;
+    background: @white;
+    transition: all 0.3s ease-out;
+    backface-visibility: hidden;
+    margin: 5px auto;
+  }
+  &.on .one {
+    transform: rotate(45deg) translateX(2px) translateY(4px);
+  }
+  &.on .three {
+    transform: rotate(-45deg) translateX(8px) translateY(-10px);
+  }
+  &.on .two {
+    opacity: 0;
+  }
+}
+
+.nav__resize {
+  z-index: 1;
+  top: 0px;
+  position: absolute;
+  background: @pitch-black;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  display: table;
+  .nav__menu {
+    height: 90px;
+    display: table-cell;
+    vertical-align: center;
+    li {
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 50px;
+      min-height: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      &:nth-child(1) {
+        margin-top: 100px;
+      }
+      a {
+        color: @white;
+      }
+    }
+  }
+  &.active {
+    visibility: visible;
+    opacity: 0.8;
+  }
+}
+
+@media(max-width: 850px) {
+  .nav__toggle {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 6px;
+  }
+  .nav .nav__brand {
+    display: none;
+  }
+  .nav__menu a {
+    font-family: @montserrat;
+    font-weight: 200;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .nav .nav__menu {
+    display: none;
+  }
+}
+
+@media(min-width: 850px) {
+  .nav__resize {
+    visibility: hidden !important;
+  }
+}

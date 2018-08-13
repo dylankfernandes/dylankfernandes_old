@@ -1,0 +1,43 @@
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+.section {
+  background-color: @white;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 10%;
+  width: 100%;
+}
+
+.section__text {
+  font-size: @text-md;
+  font-weight: @normal-weight;
+  font-family: @karla;
+  color: @dark-gray;
+}
+
+.section__header {
+  font-size: @text-lg;
+  font-weight: @bold-weight;
+  font-family: @open-sans;
+  color: @dark-gray;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay:before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}

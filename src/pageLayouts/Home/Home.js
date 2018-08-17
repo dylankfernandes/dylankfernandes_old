@@ -11,10 +11,6 @@ const Home = (props) => (
         <Button>About Me</Button>
       </div>
     </div>
-
-    {/*<div className="section about__section">
-
-    </div>*/}
   </div>
 )
 

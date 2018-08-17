@@ -1,7 +1,7 @@
 .home {
   .home__landing {
-    height: 80vh;
-    background-image: url("../../assets/images/portrait.jpg");
+    height: 100vh;
+    background-image: url("../../assets/images/home__background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,13 +20,13 @@
     }
   }
   .home__content {
-    max-width: 600px;
     color: @white;
     margin-bottom: 70px;
     @media (max-width: 768px) {
       text-align: center;
     }
     .home__title {
+      text-transform: uppercase;
       font-family: @open-sans;
       font-weight: @bold-weight;
       font-size: @text-xxlg;
@@ -38,7 +38,6 @@
       margin-top: 20px;
       margin-bottom: 20px;
       font-size: @text-md;
-      font-size: @text-sm;
       font-family: @karla;
     }
     Button {

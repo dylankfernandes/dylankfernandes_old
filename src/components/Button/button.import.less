@@ -19,6 +19,14 @@
     }
   }
   &.button-dark {
-    &:hover {}
+    background-color: transparent;
+    color: @black;
+    text-decoration: none;
+    border: 2px solid @black;
+    transition: all @animation-timing;
+    &:hover {
+      color: @white;
+      background-color: @black;
+    }
   }
 }

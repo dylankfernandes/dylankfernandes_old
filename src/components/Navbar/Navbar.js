@@ -6,10 +6,10 @@ import Instagram from '../SocialMedia/Instagram';
 
 const Navbar = () => (
   <div>
-    <Twitter />
-    <Medium />
-    <Facebook />
-    <Instagram />
+    <Twitter className="navbar__twitter" />
+    <Medium className="navbar__medium" />
+    <Facebook className="navbar__facebook" />
+    <Instagram className="navbar__instagram" />
   </div>
 )
 

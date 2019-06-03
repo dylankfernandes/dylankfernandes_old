@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Button = (props) => (
-  <button className={`button button-${props.theme}`}>
-    <a href={props.link}>{props.children}</a>
-  </button>
+  <a href={props.link} className={`button button-${props.theme}`}>
+    {props.children}
+  </a>
 );
 
 Button.PropTypes = {

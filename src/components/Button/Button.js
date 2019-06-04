@@ -5,7 +5,7 @@ const Button = (props) => (
   <a href={props.link} className={`button button-${props.theme}`}>
     {props.children}
   </a>
-);
+)
 
 Button.PropTypes = {
   theme: PropTypes.string,
@@ -14,7 +14,8 @@ Button.PropTypes = {
 
 Button.defaultProps = {
   theme: 'light',
-  name: 'button'
+  name: 'button',
+  download: ''
 }
 
 export default Button

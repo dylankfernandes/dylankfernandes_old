@@ -11,7 +11,7 @@ const Home = (props) => (
         <h1 className="home__title">Hi, I'm Dylan Fernandes</h1>
         <p className="home__tagline">programmer, blogger, self development geek, student</p>
         <Button link={resume}>Resume</Button>
-        <Button link="https://github.com/dylankfernandes">Projects</Button>
+        <Button link="https://github.com/dylankfernandes">GitHub</Button>
         <Navbar />
       </div>
     </div>

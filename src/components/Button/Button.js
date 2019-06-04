@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Button = (props) => (
-  <a href={props.link} className={`button button-${props.theme}`}>
+  <a href={props.link} className={`button button-${props.theme}`} target="_blank">
     {props.children}
   </a>
 )
